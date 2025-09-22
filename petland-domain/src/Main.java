@@ -1,6 +1,10 @@
-import com.petland.domain.cadastro.Cadastro;
-import com.petland.domain.cadastro.Endereco;
-import com.petland.domain.cadastro.Perfil;
+import com.petland.domain.atendimento.Atendimento;
+import com.petland.domain.atendimento.AtendimentoStatus;
+import com.petland.domain.atendimento.AtendimentoTipo;
+import com.petland.domain.cadastro.*;
+
+import java.time.LocalDate;
+import java.time.LocalTime;
 
 public class Main {
     public static void main(String[] args){
@@ -16,13 +20,33 @@ public class Main {
         Endereco endereco = new Endereco();
         endereco.setLogradouro("Rua Lionel Messi");
         endereco.setNumero("10A");
-
+        // cadastro
         cadastro.setEndereco(endereco);
 
-        System.out.println("\nCadastro Criado com sucesso!");
-        System.out.println("Nome: " + cadastro.getNome());
-        System.out.println("Endereço: " + cadastro.getEndereco().getLogradouro() + ", " + cadastro.getEndereco().getNumero());
+        Animal animal = new Animal();
+        animal.setId(1);
+        animal.setNome("Leona");
+        animal.setAniversario(LocalDate.of(2018, 07, 15));
+        animal.setEspecie(Especie.CACHORRO);
 
-        System.out.println(cadastro);
+        ProdutoServico servico = new ProdutoServico();
+        servico.setId(1);
+        servico.setServico(true);
+        servico.setNome("Tosa");
+        servico.setValor(65.0);
+
+        Atendimento atendimento = new Atendimento();
+        atendimento.setId(1);
+        atendimento.setData(LocalDate.now());
+        atendimento.setHora(LocalTime.now());
+        atendimento.setDescricao(servico.getNome());
+        atendimento.setValor(servico.getValor());
+        atendimento.setStatus(AtendimentoStatus.REALIZANDO);
+        atendimento.setTipo(AtendimentoTipo.HIGIENIZACAO);
+        atendimento.setSolicitante(cadastro);
+        atendimento.setPaciente(animal);
+        atendimento.setServico(servico);
+
+        System.out.println(atendimento);
     }
 }
