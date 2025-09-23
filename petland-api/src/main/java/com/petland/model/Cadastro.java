@@ -13,6 +13,6 @@ public class Cadastro {
     @Id
     private Integer id;
     private String nome;
-    private Perfil perfil;
-    private Endereco endereco;
+    //private Perfil perfil;
+    //private Endereco endereco;
 }
