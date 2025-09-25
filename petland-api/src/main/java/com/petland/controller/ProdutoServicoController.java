@@ -1,8 +1,6 @@
 package com.petland.controller;
 
-import com.petland.model.Animal;
 import com.petland.model.ProdutoServico;
-import com.petland.repository.AnimalRepository;
 import com.petland.repository.ProdutoServicoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;

@@ -1,6 +1,6 @@
 package com.petland.start;
 
-import com.petland.model.Animal;
+import com.petland.model.entity.AnimalEntity;
 import com.petland.model.Especie;
 import com.petland.repository.AnimalRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,7 +18,7 @@ public class StartApp implements ApplicationRunner {
 
     @Override
     public void run(ApplicationArguments args) throws Exception {
-        Animal leona = new Animal();
+        AnimalEntity leona = new AnimalEntity();
         leona.setNome("Leona");
         leona.setAniversario(LocalDate.of(2018, 07, 15));
         leona.setEspecie(Especie.CACHORRO);
