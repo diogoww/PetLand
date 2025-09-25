@@ -1,8 +1,8 @@
 package com.petland.start;
 
-import com.petland.model.entity.AnimalEntity;
-import com.petland.model.Especie;
-import com.petland.repository.AnimalRepository;
+import com.petland.cadastros.model.entity.AnimalEntity;
+import com.petland.cadastros.model.Especie;
+import com.petland.cadastros.repository.AnimalRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;

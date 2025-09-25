@@ -1,6 +1,6 @@
-package com.petland.model.entity;
+package com.petland.cadastros.model.entity;
 
-import com.petland.model.Especie;
+import com.petland.cadastros.model.Especie;
 import jakarta.persistence.*;
 import lombok.Data;
 import lombok.Setter;

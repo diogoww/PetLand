@@ -1,6 +1,6 @@
-package com.petland.model.dto;
+package com.petland.cadastros.model.dto;
 
-import com.petland.model.Especie;
+import com.petland.cadastros.model.Especie;
 import lombok.Data;
 
 import java.time.LocalDate;

@@ -1,9 +1,9 @@
-package com.petland.service;
+package com.petland.cadastros.service;
 
-import com.petland.model.dto.AnimalRequest;
-import com.petland.model.dto.AnimalResponse;
-import com.petland.model.entity.AnimalEntity;
-import com.petland.repository.AnimalRepository;
+import com.petland.cadastros.model.dto.AnimalRequest;
+import com.petland.cadastros.model.dto.AnimalResponse;
+import com.petland.cadastros.model.entity.AnimalEntity;
+import com.petland.cadastros.repository.AnimalRepository;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

@@ -1,7 +1,7 @@
-package com.petland.controller;
+package com.petland.cadastros.controller;
 
-import com.petland.model.ProdutoServico;
-import com.petland.repository.ProdutoServicoRepository;
+import com.petland.cadastros.model.ProdutoServico;
+import com.petland.cadastros.repository.ProdutoServicoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

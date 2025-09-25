@@ -1,8 +1,8 @@
-package com.petland.controller;
+package com.petland.cadastros.controller;
 
-import com.petland.model.dto.CadastroRequest;
-import com.petland.model.dto.CadastroResponse;
-import com.petland.service.CadastroService;
+import com.petland.cadastros.model.dto.CadastroRequest;
+import com.petland.cadastros.model.dto.CadastroResponse;
+import com.petland.cadastros.service.CadastroService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

@@ -1,7 +1,7 @@
-package com.petland.model.entity;
+package com.petland.cadastros.model.entity;
 
-import com.petland.model.Endereco;
-import com.petland.model.Perfil;
+import com.petland.cadastros.model.Endereco;
+import com.petland.cadastros.model.Perfil;
 import jakarta.persistence.*;
 import lombok.AccessLevel;
 import lombok.Data;
