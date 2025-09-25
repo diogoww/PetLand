@@ -24,4 +24,7 @@ public class AnimalEntity {
 
     @Enumerated(EnumType.STRING)
     private Especie especie;
+
+    @Column(name = "cad_tutor")
+    private Integer tutor;
 }

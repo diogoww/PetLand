@@ -10,4 +10,5 @@ public class AnimalRequest {
     private String nome;
     private LocalDate aniversario;
     private Especie especie;
+    private Integer tutor;
 }
